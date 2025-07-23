@@ -1,12 +1,10 @@
 // src/app/api/incidents/[id]/resolve/route.ts
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/lib/db';
 
-export async function PATCH(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
-  const { id } = params;
+export async function PATCH(request: NextRequest) {
+  const url = new URL(request.url);
+  const id = url.pathname.split('/').slice(-2)[0]; // extracts [id] from path
 
   try {
     const updatedIncident = await prisma.incident.update({

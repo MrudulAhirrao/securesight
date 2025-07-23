@@ -1,7 +1,7 @@
 // src/components/features/incidents/IncidentList.tsx
 'use client';
 
-import type { IncidentWithCamera } from '@/app/(dashboard)/page';
+import type { IncidentWithCamera } from '@/app/page';
 import IncidentItem from './IncidentItem';
 import IncidentItemSkeleton from './IncidentItemSkeleton';
 import type { Camera } from '@prisma/client';

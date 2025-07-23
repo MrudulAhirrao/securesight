@@ -1,6 +1,6 @@
 'use client';
 
-import type { IncidentWithCamera } from '@/app/(dashboard)/page';
+import type { IncidentWithCamera } from '@/app/page';
 import type { Camera } from '@prisma/client';
 import { useState, useRef, MouseEvent, useMemo, useCallback } from 'react';
 import {

@@ -1,4 +1,4 @@
-import type { IncidentWithCamera } from '@/app/(dashboard)/page';
+import type { IncidentWithCamera } from '@/app/page';
 import { TriangleAlert, Users, Clapperboard, FireExtinguisher } from 'lucide-react';
 import Image from 'next/image';
 
